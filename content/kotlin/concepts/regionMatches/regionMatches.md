@@ -12,6 +12,7 @@ CatalogContent:
   - 'learn-kotlin'
   - 'paths/computer-science'
 ---
+
 **regionMatches()** for char sequence checks if a specified region within a Kotlin char sequence matches the content of another char sequence.
 
 **regionMatches()** for string checks if a specified region within a Kotlin String matches the content of another string.
@@ -28,16 +29,14 @@ fun CharSequence.regionMatches(
     ignoreCase: Boolean = false
 ): Boolean
 ```
+
 Returns true if the specified region in this char sequence is equal to the specified region in another char sequence.
 
 Parameters
 
 - thisOffset - the start offset in this char sequence of the substring to compare.
-
 - other - the string against a substring of which the comparison is performed.
-
 - otherOffset - the start offset in the other char sequence of the substring to compare.
-
 - length - the length of the substring to compare.
 
 ```pseudo
@@ -50,16 +49,14 @@ fun String.regionMatches(
     ignoreCase: Boolean = false
 ): Boolean
 ```
+
 Returns true if the specified region in this string is equal to the specified region in another string.
 
 Parameters
 
 - thisOffset - the start offset in this string of the substring to compare.
-
 - other - the string against a substring of which the comparison is performed.
-
 - otherOffset - the start offset in the other string of the substring to compare.
-
 - length - the length of the substring to compare.
 
 ## Example
@@ -85,7 +82,6 @@ fun main() {
         println("The specified region in charSeq1 does not match the content of charSeq2.")
     }
 }
-
 ```
 
 This prints the following output:
